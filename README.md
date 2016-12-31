@@ -1,6 +1,6 @@
 # Asus Zenfone Selfie Splash Editor
 
-A script to build splash.img, which contains the payload to display the boot logo..
+A script to build splash.img, which contains the payload to display the boot logo in Asus Zenfone Selfie device..
 (A boot logo is the OEM logo displayed when a SoC is booted up)
 
 This tool is created by reverse engineered (lol) and understanding the structure of splash.img from the device's original raw file from the splash partition..
