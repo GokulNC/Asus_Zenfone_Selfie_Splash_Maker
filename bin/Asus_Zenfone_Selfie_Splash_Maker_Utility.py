@@ -2,9 +2,9 @@
 
 #===========================================================================
 
-#  This script reads the pictures and creates the splash.img for Asus Zenfone Selfie
+#  This script reads the pictures and creates the splash.img for Asus Zenfone, tested to be working on Zenfone Selfie & Zenfone 2 Laser
 
-## This is for Asus Zenfone Selfie only, please do not try on other devices, unless you know what you're doing..
+## This is for Asus Zenfone device only, please do not try on other devices, unless you know what you're doing..
 
 # /*
 # Environment requirement:
@@ -71,7 +71,7 @@ def GetImgHeader(list_of_images):
         header[current_offset:current_offset+16] = image[0][:16]
         current_offset += 16
         
-        # Convert all values to little-endian
+        # Convert all values to little-endian:
         
         # Offset Sector of image
         header[current_offset]   = ( image[1]        & 0xFF)

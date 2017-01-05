@@ -2,9 +2,9 @@
 
 @echo off
 echo.--------------------------------------
-echo.Asus Zenfone SELFIE Splash Image Maker
+echo.Asus Zenfone Splash (HD/FHD) Image Maker
 
-:: This is for Asus Zenfone Selfie only, please do not try on other devices..
+:: This is for Asus Zenfone devices only, please do not try on other devices..
 :: For other devices: http://forum.xda-developers.com/android/software-hacking/guide-how-to-create-custom-boot-logo-t3470473
 
 echo.
@@ -27,7 +27,7 @@ del /Q "output\splash.img" 2>NUL
 :: I have included a minimal copy of Python (Windows) with required libraries (instead of asking users to install them)
 bin\Python2.7\python2.7.exe bin\Asus_Zenfone_Selfie_Splash_Maker_Utility.py "output\splash.img" || (echo."PROCESS FAILED. Try Again"&echo.Quitting&echo.&pause&exit)
 
-:: 'splash' partition size of Zenfone Selfie is 5MB; so splash.img shouldn't be larger than that..
+:: 'splash' partition size of Zenfone Selfie is 5MB; so splash.img shouldn't be larger than that.. No idea about other devices.
 set max_file_size=5368709120
 call :set_file_size "output\splash.img"
 if %file_size% gtr %max_file_size% ( echo."splash.img generated is larger than 5MB, which is not recommended"&echo."Reduce picture resolution and try again"&echo.&echo.&pause&exit )

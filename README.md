@@ -1,6 +1,6 @@
-# Asus Zenfone Selfie Splash Editor
+# Asus Zenfone Splash Editor
 
-A script to build splash.img, which contains the payload to display the boot logo in Asus Zenfone Selfie device..
+A script to build splash.img, which contains the payload to display the boot logo in Asus Zenfone devices..
 (A boot logo is the OEM logo displayed when a SoC is booted up)
 
 This tool is created by reverse engineering (lol) and understanding the structure of splash.img from the device's original raw file from the splash partition..
@@ -9,4 +9,9 @@ It reads 8 pictures and converts it into sequential RGB24 data (BGR24 actually, 
 
 More Info/Instructions: [XDA Thread](http://forum.xda-developers.com/android/development/guide-how-to-change-boot-logo-splash-t3527347)
 
-You might also be able to use it for other Asus devices too, I don't know :bowtie:
+
+Tested and working on the following devices:
+Asus Zenfone Selfie
+Asus Zenfone 2 Laser
+
+Might also work on other Asus devices, I don't know :bowtie:
